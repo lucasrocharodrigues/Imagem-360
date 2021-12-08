@@ -1,0 +1,182 @@
+@import './reset.scss';
+
+.product__images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .product__images-box {
+    max-width: 597px;
+    width: 100%;
+    display: flex;
+    .product__thumbs-list {
+      width: 77px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 24px;
+      .slick-arrow {
+        width: 30px;
+        height: 30px;
+        background-color: #882182;
+        border-radius: 5px;
+        font-size: 0;
+        display: flex;
+        border: none;
+      }
+      .slick-prev{
+        &::after{
+          content: '';
+          width: 30px;
+          height: 30px;
+          background-image: url('./images/arrow-prev.png');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .slick-next{
+        &::after{
+          content: '';
+          width: 30px;
+          height: 30px;
+          background-image: url('./images/arrow-next.png');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .slick-list {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        .slick-track {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .video{
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color:rgba(0, 0, 0, 0.3) ;
+          
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-image: url(/test/images/play-thumb.png);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .product__slide-thumb {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border: 0.5px solid #b0b4b9;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 77px;
+        height: 77px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .product__images-list {
+      width: 496px;
+      .slick-list {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        height: 100%;
+        border: 0.5px solid #b0b4b9;
+        .slick-track {
+          display: flex;
+          .video {
+            position: relative;
+            &::after{
+              content: '';
+              width: 48px;
+              height: 26px;
+              background-image: url(/test/images/360-icon.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              position: absolute;
+              right: 17px;
+              top: 18px;
+            }
+            .controlls {
+              position: absolute;
+              bottom: 0;
+              display: flex;
+              width: 100%;
+              background: #882182;
+              height: 57px;
+              justify-content: center;
+              & button{
+                background: #882182;
+                border: none;
+                margin-left: 13px;
+                margin-right: 13px;
+                cursor: pointer;
+                &:hover{
+                  & svg{
+                    & path{
+                      fill: #F2C8EF;
+                    }
+                  }
+                }
+              }
+              .autoplay{
+                .stop{
+                  display: none;
+                }
+                &.playing{
+                  .stop{
+                    display: block;
+                  }
+                  .play{
+                    display: none;
+                  }
+                }
+              }
+              .expand{
+                position: absolute;
+                bottom: 100%;
+                margin-bottom: 9px;
+                right: 17px;
+                background-color: transparent;
+                &:hover{
+                  & svg{
+                    & path{
+                      fill: initial;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .product__slide-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

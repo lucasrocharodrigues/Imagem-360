@@ -1,0 +1,396 @@
+/* Reset css */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #000;
+  outline-color: transparent !important;
+}
+
+*:focus {
+  outline-color: transparent !important;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  line-height: inherit;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: initial;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active,
+.btn:focus,
+.btn:active,
+.button:focus,
+.button:active {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color],
+.uneditable-input {
+  display: inline-block;
+  height: inherit;
+  padding: inherit;
+  margin-bottom: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  vertical-align: middle;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+input[type=checkbox],
+input[type=radio],
+select[type=checkbox],
+select[type=radio],
+textarea[type=checkbox],
+textarea[type=radio] {
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+body.aberto {
+  overflow: hidden;
+}
+
+body.aberto .topo .menu-departamento {
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* Inicio load */
+body > #ajaxBusy.loading {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: block !important;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  z-index: 999999;
+  text-indent: -99999px;
+  text-align: center;
+  background-color: transparent;
+}
+
+body > #ajaxBusy.loading[style="display: none;"] {
+  display: none !important;
+}
+
+body > #ajaxBusy.loading p {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-style: solid;
+  animation: loader 500ms linear infinite;
+  border-width: 3px;
+  border-color: #e2232d transparent;
+  z-index: 9999;
+  margin: -25px 0 0 -25px;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Fim load */
+.product__images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.product__images-container .product__images-box {
+  max-width: 597px;
+  width: 100%;
+  display: flex;
+}
+.product__images-container .product__images-box .product__thumbs-list {
+  width: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+}
+.product__images-container .product__images-box .product__thumbs-list .slick-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #882182;
+  border-radius: 5px;
+  font-size: 0;
+  display: flex;
+  border: none;
+}
+.product__images-container .product__images-box .product__thumbs-list .slick-prev::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("./images/arrow-prev.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product__images-container .product__images-box .product__thumbs-list .slick-next::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("./images/arrow-next.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product__images-container .product__images-box .product__thumbs-list .slick-list {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.product__images-container .product__images-box .product__thumbs-list .slick-list .slick-track {
+  display: flex;
+  flex-direction: column;
+}
+.product__images-container .product__images-box .product__thumbs-list .video {
+  position: relative;
+}
+.product__images-container .product__images-box .product__thumbs-list .video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.product__images-container .product__images-box .product__thumbs-list .video::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/test/images/play-thumb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product__images-container .product__images-box .product__thumbs-list .product__slide-thumb {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: 0.5px solid #b0b4b9;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 77px;
+}
+.product__images-container .product__images-box .product__thumbs-list img {
+  width: 100%;
+  height: auto;
+}
+.product__images-container .product__images-box .product__images-list {
+  width: 496px;
+}
+.product__images-container .product__images-box .product__images-list .slick-list {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  border: 0.5px solid #b0b4b9;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track {
+  display: flex;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video {
+  position: relative;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video::after {
+  content: "";
+  width: 48px;
+  height: 26px;
+  background-image: url(/test/images/360-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 17px;
+  top: 18px;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background: #882182;
+  height: 57px;
+  justify-content: center;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls button {
+  background: #882182;
+  border: none;
+  margin-left: 13px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls button:hover svg path {
+  fill: #F2C8EF;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls .autoplay .stop {
+  display: none;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls .autoplay.playing .stop {
+  display: block;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls .autoplay.playing .play {
+  display: none;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls .expand {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 9px;
+  right: 17px;
+  background-color: transparent;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .video .controlls .expand:hover svg path {
+  fill: initial;
+}
+.product__images-container .product__images-box .product__images-list .slick-list .slick-track .product__slide-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__images-container .product__images-box .product__images-list img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

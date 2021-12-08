@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<article class="product__images-container">
+		<section class="product__images-box">
+			<ul class="product__thumbs-list">
+				<li class="product__slide-thumb video"></li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_02.jpg">
+				</li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_03.jpg">
+				</li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_05.jpg">
+				</li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_06.jpg">
+				</li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_07.jpg">
+				</li>
+				<li class="product__slide-thumb">
+					<img src="./images/Filename_08.jpg">
+				</li>
+			</ul>
+			<ul class="product__images-list">
+				<li class="product__slide-image video">
+					<div class="video-container"></div>
+					<div class="controlls">
+						<button class="prev"><svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.84736 0.955787C8.98716 -1.01283 11.9829 1.98289 9.9572 3.75179C6.33381 5.20686 3.99429 7.46078 3.99429 9.97148C3.99429 13.709 9.10128 16.8188 16.0057 17.7033V21.7261C6.87589 20.6134 0 15.7632 0 9.97148C0 6.37661 2.65335 3.15265 6.84736 0.955787ZM17.7175 15.0214L24.2796 18.9872C25.2211 19.5578 25.2211 20.4708 24.2796 21.0414L17.7746 24.9501C16.8331 25.5207 16.0628 25.0927 16.0628 23.98L16.0342 15.9915C16.0057 14.8788 16.776 14.4508 17.7175 15.0214Z" fill="white"/>
+							</svg>
+							</button>
+						<button class="next"><svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.1526 0.955787C16.0128 -1.01283 13.0171 1.98289 15.0428 3.75179C18.6662 5.20686 21.0057 7.46078 21.0057 9.97148C21.0057 13.709 15.8987 16.8188 8.9943 17.7033V21.7261C18.1241 20.6134 25 15.7632 25 9.97148C25 6.37661 22.3466 3.15265 18.1526 0.955787ZM7.28245 15.0214L0.720401 18.9872C-0.221111 19.5578 -0.221111 20.4708 0.720401 21.0414L7.22539 24.9501C8.16691 25.5207 8.93723 25.0927 8.93723 23.98L8.96576 15.9915C8.9943 14.8788 8.22397 14.4508 7.28245 15.0214Z" fill="white"/>
+							</svg>
+							</button>
+						<button class="autoplay">
+							<svg  class="play" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18 0C8.05928 0 0 8.05928 0 18C0 27.941 8.05928 36 18 36C27.9412 36 35.9999 27.941 35.9999 18C36 8.05928 27.9412 0 18 0ZM25.2699 20.2806L14.1258 26.6716C12.6263 27.5314 11.4113 26.8271 11.4113 25.0989V12.3473C11.4113 10.6187 12.6262 9.91554 14.1258 10.7752L25.2699 17.1658C26.7694 18.0258 26.7694 19.4204 25.2699 20.2806Z" fill="#F9F9F9"/>
+							</svg>
+							<svg  class="stop" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.0008 0C8.06034 0 0.000976562 8.059 0.000976562 17.9998C0.000976562 27.9403 8.06034 36 18.0008 36C27.9419 36 36.0006 27.9403 36.0006 17.9998C36.0006 8.059 27.9421 0 18.0008 0ZM16.1299 23.3443C16.1299 24.4841 15.2059 25.4081 14.0662 25.4081C12.9264 25.4081 12.0024 24.4841 12.0024 23.3443V12.6551C12.0024 11.5153 12.9264 10.5913 14.0662 10.5913C15.2059 10.5913 16.1299 11.5153 16.1299 12.6551V23.3443ZM23.8752 23.3443C23.8752 24.4841 22.9511 25.4081 21.8115 25.4081C20.6717 25.4081 19.7477 24.4841 19.7477 23.3443V12.6551C19.7477 11.5153 20.6717 10.5913 21.8115 10.5913C22.9512 10.5913 23.8752 11.5153 23.8752 12.6551V23.3443Z" fill="white"/>
+							</svg>								
+							</button>
+						<button class="zoom">
+							<svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M25.1859 23.6917C24.589 23.0782 23.6212 23.0782 23.0244 23.6917C22.4275 24.3051 22.4275 25.2998 23.0244 25.9132L32.3908 35.5399C32.9877 36.1534 33.9555 36.1534 34.5523 35.5399C35.1492 34.9264 35.1492 33.9318 34.5523 33.3184L25.1859 23.6917Z" fill="white"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M28.5304 14.6614C28.5304 6.56412 22.1436 0 14.2652 0C6.38674 0 0 6.56412 0 14.6614C0 22.7586 6.38674 29.3228 14.2652 29.3228C22.1436 29.3228 28.5304 22.7586 28.5304 14.6614ZM25.4735 14.6614C25.4735 8.29925 20.4554 3.14172 14.2652 3.14172C8.07498 3.14172 3.05683 8.29925 3.05683 14.6614C3.05683 21.0235 8.07498 26.181 14.2652 26.181C20.4554 26.181 25.4735 21.0235 25.4735 14.6614Z" fill="white"/>
+							</svg>
+							</button>
+							<button class="expand">
+								<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M27.5 6.875C27.5 6.51033 27.3551 6.16059 27.0973 5.90273C26.8394 5.64487 26.4897 5.5 26.125 5.5H19.25C18.8853 5.5 18.5356 5.64487 18.2777 5.90273C18.0199 6.16059 17.875 6.51033 17.875 6.875C17.875 7.23967 18.0199 7.58941 18.2777 7.84727C18.5356 8.10513 18.8853 8.25 19.25 8.25H22.7838L18.2738 12.7737C18.1449 12.9016 18.0426 13.0537 17.9728 13.2212C17.903 13.3888 17.867 13.5685 17.867 13.75C17.867 13.9315 17.903 14.1112 17.9728 14.2788C18.0426 14.4463 18.1449 14.5984 18.2738 14.7262C18.4016 14.8551 18.5537 14.9574 18.7212 15.0272C18.8888 15.097 19.0685 15.133 19.25 15.133C19.4315 15.133 19.6112 15.097 19.7788 15.0272C19.9464 14.9574 20.0984 14.8551 20.2263 14.7262L24.75 10.2025V13.75C24.75 14.1147 24.8949 14.4644 25.1527 14.7223C25.4106 14.9801 25.7603 15.125 26.125 15.125C26.4897 15.125 26.8394 14.9801 27.0973 14.7223C27.3551 14.4644 27.5 14.1147 27.5 13.75V6.875Z" fill="#3F4249"/>
+									<path d="M14.7262 18.2737C14.5984 18.1449 14.4463 18.0426 14.2788 17.9728C14.1112 17.903 13.9315 17.867 13.75 17.867C13.5685 17.867 13.3888 17.903 13.2212 17.9728C13.0537 18.0426 12.9016 18.1449 12.7737 18.2737L8.25 22.7837V19.25C8.25 18.8853 8.10513 18.5356 7.84727 18.2777C7.58941 18.0199 7.23967 17.875 6.875 17.875C6.51033 17.875 6.16059 18.0199 5.90273 18.2777C5.64487 18.5356 5.5 18.8853 5.5 19.25V26.125C5.5 26.4897 5.64487 26.8394 5.90273 27.0973C6.16059 27.3551 6.51033 27.5 6.875 27.5H13.75C14.1147 27.5 14.4644 27.3551 14.7223 27.0973C14.9801 26.8394 15.125 26.4897 15.125 26.125C15.125 25.7603 14.9801 25.4106 14.7223 25.1527C14.4644 24.8949 14.1147 24.75 13.75 24.75H10.2025L14.7262 20.2263C14.8551 20.0984 14.9574 19.9463 15.0272 19.7788C15.097 19.6112 15.133 19.4315 15.133 19.25C15.133 19.0685 15.097 18.8888 15.0272 18.7212C14.9574 18.5537 14.8551 18.4016 14.7262 18.2737Z" fill="#3F4249"/>
+									</svg>
+									
+							</button>
+					</div>
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_02.jpg">
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_03.jpg">
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_05.jpg">
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_06.jpg">
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_07.jpg">
+				</li>
+				<li class="product__slide-image">
+					<img src="./images/Filename_08.jpg">
+				</li>
+			</ul>
+		</section>
+	</article>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../src/img360.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
